@@ -327,3 +327,4 @@ my_stock/app/OpenCapabilityService/OpenCapabilityService.apk:system_ext/app/Open
 my_stock/app/FileEncryption/FileEncryption.apk:system_ext/app/FileEncryption/FileEncryption.apk
 system/framework/oplus-services.jar;EXTRACT_ONLY
 # Camera AI feature overlays packaged via overlays/Android.bp (not listed here)
+system/lib64/libbase.so:system_ext/lib64/libbase-stock.so;FIX_SONAME
