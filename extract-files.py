@@ -28,12 +28,18 @@ from extract_utils.main import (
     ExtractUtils,
     ExtractUtilsModule,
 )
+import extract_utils.fixups_blob
+import extract_utils.tools
 from extract_utils.tools import (
-    apktool_path,
     java_path,
 )
 from extract_utils.utils import Color, color_print, run_cmd
 
+apktool_path = os.environ.get(
+    'APKTOOL_JAR', '/snap/apktool/current/apktool.jar'
+)
+extract_utils.tools.apktool_path = apktool_path
+extract_utils.fixups_blob.apktool_path = apktool_path
 
 def lib_fixup_system_ext_suffix(lib: str, partition: str, *args, **kwargs):
     """
