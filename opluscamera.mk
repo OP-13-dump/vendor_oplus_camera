@@ -95,6 +95,10 @@ PRODUCT_PACKAGES += \
 
 # SEpolicy
 include vendor/oplus/camera/sepolicy/SEPolicy.mk
+PRODUCT_SELINUX_TREBLE_LABELING_TRACKING_LIST_FILE ?= \
+    vendor/oplus/camera/sepolicy/tracking_list.yaml
+PRODUCT_ENFORCE_SELINUX_TREBLE_LABELING := false
 
 # Inherit from camera-vendor.mk
 $(call inherit-product, vendor/oplus/camera/camera/camera-vendor.mk)
+
