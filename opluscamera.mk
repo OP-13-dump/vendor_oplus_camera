@@ -93,6 +93,11 @@ PRODUCT_PACKAGES += \
     OplusAiConfigOverlayCommon \
     OplusCameraBigBallConfigOverlay
 
+# Themed icon overlays
+PRODUCT_PACKAGES += \
+    CameraThemedIcon \
+    OnePlusGalleryTarget
+
 # SEpolicy
 include vendor/oplus/camera/sepolicy/SEPolicy.mk
 
